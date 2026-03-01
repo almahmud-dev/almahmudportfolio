@@ -196,7 +196,7 @@ const WhyChooseMe = ({ darkMode }) => {
                                     }}
                                 />
 
-                                {/* Icon Container - ফিক্সড লজিক */}
+                                {/* Icon Container - */}
                                 <motion.div
                                     whileHover={{ rotate: 360 }}
                                     transition={{ duration: 0.6, ease: 'easeInOut' }}

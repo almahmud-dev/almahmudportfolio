@@ -14,7 +14,7 @@ const Testimonials = ({ darkMode }) => {
     { id: 1, name: "Jihad Miya", image: jihadMiya, designation: "Senior Frontend Developer", company: "Creative IT Institute", feedback: "Mahmud consistently delivered clean and responsive interfaces. His attention to detail and problem-solving skills significantly improved our project workflow.", rating: 5 },
     { id: 2, name: "Mahammad Nadil", image: Nadil, designation: "Team Lead", company: "Creative IT Institute", feedback: "Working with Mahmud was a great experience. He writes maintainable code and adapts quickly to new technologies. A valuable team member.", rating: 5 },
     { id: 3, name: "Fima Akter", image: fima, designation: "UI/UX Designer", company: "Creative IT Institute", feedback: "Al Mahmud transformed our designs into pixel-perfect implementations. His collaboration skills and commitment to quality made the project successful.", rating: 5 },
-    { id: 4, name: "NR Srabon", image: srabon, designation: "Full Stack Developer", company: "Creative IT Institute", feedback: "Great team player with excellent React skills. Sujan always delivers high-quality work on time and helps others grow.", rating: 5 },
+    { id: 4, name: "NR Srabon", image: srabon, designation: "Full Stack Developer", company: "Creative IT Institute", feedback: "Great team player with excellent React skills. Mahmud always delivers high-quality work on time and helps others grow.", rating: 5 },
   ];
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const Testimonials = ({ darkMode }) => {
         </div>
 
         <div 
-          className="relative h-[450px] md:h-[400px] flex items-center justify-center touch-none"
+          className="relative h-112.5 md:h-100 flex items-center justify-center touch-none"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -78,14 +78,14 @@ const Testimonials = ({ darkMode }) => {
                   zIndex: isActive ? 30 : 10,
                 }}
                 transition={{ type: "spring", stiffness: 200, damping: 25 }}
-                className="absolute w-full max-w-[320px] md:max-w-[450px] cursor-grab active:cursor-grabbing"
+                className="absolute w-full max-w-[320px] md:max-w-112.5 cursor-grab active:cursor-grabbing"
               >
                 <div
                   style={{
                     background: darkMode ? "#1e293b" : "#ffffff",
                     borderColor: isActive ? "#f97316" : (darkMode ? "#334155" : "#e2e8f0")
                   }}
-                  className={`p-8 rounded-[2rem] border-2 shadow-xl transition-all duration-300 ${isActive ? 'shadow-orange-500/10' : 'grayscale-[0.5]'}`}
+                  className={`p-8 rounded-4xl border-2 shadow-xl transition-all duration-300 ${isActive ? 'shadow-orange-500/10' : 'grayscale-[0.5]'}`}
                 >
                   <FaQuoteLeft className={`text-3xl mb-4 ${darkMode ? "text-slate-600" : "text-slate-200"}`} />
                   
@@ -95,7 +95,7 @@ const Testimonials = ({ darkMode }) => {
                     ))}
                   </div>
 
-                  <p className={`text-lg italic leading-relaxed mb-8 min-h-[100px] ${darkMode ? "text-slate-300" : "text-slate-600"}`}>
+                  <p className={`text-lg italic leading-relaxed mb-8 min-h-25 ${darkMode ? "text-slate-300" : "text-slate-600"}`}>
                     "{testimonial.feedback}"
                   </p>
 
