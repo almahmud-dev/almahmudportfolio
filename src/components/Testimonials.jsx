@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import jihadMiya from "../../src/assets/Testimonials/jihad.jpg";
 import Nadil from "../../src/assets/Testimonials/Nadil.jpg";
 import fima from "../../src/assets/Testimonials/fima.jpg";
-import srabon from "../../src/assets/Testimonials/srabon.jpg";
+import Hamim from "../../src/assets/Testimonials/Hamim.jpg";
 
 const Testimonials = ({ darkMode }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,9 +12,9 @@ const Testimonials = ({ darkMode }) => {
 
   const testimonials = [
     { id: 1, name: "Jihad Miya", image: jihadMiya, designation: "Senior Frontend Developer", company: "Creative IT Institute", feedback: "Mahmud consistently delivered clean and responsive interfaces. His attention to detail and problem-solving skills significantly improved our project workflow.", rating: 5 },
-    { id: 2, name: "Mahammad Nadil", image: Nadil, designation: "Team Lead", company: "Creative IT Institute", feedback: "Working with Mahmud was a great experience. He writes maintainable code and adapts quickly to new technologies. A valuable team member.", rating: 5 },
-    { id: 3, name: "Fima Akter", image: fima, designation: "UI/UX Designer", company: "Creative IT Institute", feedback: "Al Mahmud transformed our designs into pixel-perfect implementations. His collaboration skills and commitment to quality made the project successful.", rating: 5 },
-    { id: 4, name: "NR Srabon", image: srabon, designation: "Full Stack Developer", company: "Creative IT Institute", feedback: "Great team player with excellent React skills. Mahmud always delivers high-quality work on time and helps others grow.", rating: 5 },
+    { id: 2, name: "Mahammad Nadil", image: Nadil, designation: "Full Stack Developer", company: "Creative IT Institute", feedback: "Working with Mahmud was a great experience. He writes maintainable code and adapts quickly to new technologies. A valuable team member.", rating: 5 },
+    { id: 3, name: "Fima Akter", image: fima, designation: "Frontend Developer", company: "Creative IT Institute", feedback: "Al Mahmud transformed our designs into pixel-perfect implementations. His collaboration skills and commitment to quality made the project successful.", rating: 5 },
+    { id: 4, name: "NR Hamim", image: Hamim, designation: "Full Stack Developer", company: "Creative IT Institute", feedback: "Al Mahmud is an outstanding teammate. He’s incredibly dedicated, always ready to help, and takes real ownership of his work. His positive energy makes the whole team better.", rating: 5 },
   ];
 
   useEffect(() => {
