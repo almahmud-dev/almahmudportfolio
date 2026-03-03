@@ -189,7 +189,7 @@ const Projects = ({ darkMode }) => {
         </div>
         <div className="text-center mt-10">
           <a
-            href="https://github.com/alma-mahmud"
+            href="https://github.com/almahmud-dev"
             target="_blank"
             rel="noopener noreferrer"
             style={{
