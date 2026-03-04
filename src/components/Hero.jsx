@@ -14,13 +14,13 @@ const Hero = ({ darkMode }) => {
     {
       icon: VscGithub,
       alt: "GitHub",
-      link: "https://github.com/alma-mahmud",
+      link: "https://github.com/almahmud-dev",
       isIcon: true,
     },
     {
       icon: Linkedin,
       alt: "Linkedin",
-      link: "https://www.linkedin.com/in/alma-mahmud/",
+      link: "https://www.linkedin.com/in/al-mahmud-dev/",
       isIcon: false,
     },
     {
