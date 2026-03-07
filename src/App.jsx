@@ -10,6 +10,7 @@ import WhyChooseMe from './components/WhyChooseMe'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Lenis from 'lenis'
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true)
@@ -32,6 +33,19 @@ const App = () => {
     setDarkMode(newMode);
     document.documentElement.classList.toggle('dark');
   };
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      smoothWheel: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <div className={
