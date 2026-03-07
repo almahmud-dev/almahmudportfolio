@@ -33,19 +33,21 @@ const App = () => {
     setDarkMode(newMode);
     document.documentElement.classList.toggle('dark');
   };
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      smoothWheel: true,
-    });
+useEffect(() => {
+  const lenis = new Lenis();
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
+  function raf(time) {
+    lenis.raf(time);
     requestAnimationFrame(raf);
-  }, []);
+  }
+
+  const rafId = requestAnimationFrame(raf);
+
+  return () => {
+    cancelAnimationFrame(rafId);
+    lenis.destroy();
+  };
+}, []);
 
   return (
     <div className={
