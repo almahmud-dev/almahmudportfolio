@@ -41,8 +41,8 @@ const Projects = ({ darkMode }) => {
       desc: "Discover premium products at exclusive prices. Your one-stop shop for electronics and fashion.",
       image: profile2,
       tages: ["React", "React-Slider", "React-Icons"],
-      github: "https://github.com/alma-mahmud/First-React-Project",
-      live: "https://first-react-project-liard.vercel.app/",
+      github: "https://github.com/Mohammad-Nadil/ebt-eduact",
+      live: "https://cit-pro.vercel.app/",
     },
     {
       id: 5,
