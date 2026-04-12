@@ -58,9 +58,9 @@ const Projects = ({ darkMode }) => {
       title: "Building Stellar Websites for Startups",
       desc: "We design and develop high-quality digital products to help early-stage startups grow and succeed.",
       image: profile4,
-      tages: ["React", "Framer Motion", "React Icons"],
-      github: "https://github.com/almahmud9/agency-landing-react",
-      live: "https://agency-landing-react.vercel.app/",
+      tages: ["Nextjs", "Tanstack Query", "React Icons"],
+      github: "https://github.com/almahmud-dev/airbnb-assistant-landing",
+      live: "https://airbnb-assistant-landing.vercel.app/",
     },
   ];
   return (
