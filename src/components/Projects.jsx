@@ -14,8 +14,8 @@ const Projects = ({ darkMode }) => {
       desc: "Shop premium electronics, fashion, and lifestyle essentials at Exclusive with unbeatable deals and a seamless experience.",
       image: ecommerce,
       tages: ["React", "Redux", "Firebase"],
-      github: "https://github.com/alma-mahmud/First-ecommerce-website",
-      live: "https://first-ecommerce-websites.vercel.app/",
+      github: "https://github.com/almahmud-dev/uomo-uim",
+      live: "https://uomo-uim.vercel.app/",
     },
     {
       id: 2,
