@@ -132,7 +132,6 @@ const Hero = ({ darkMode }) => {
                 />
               </span>
             </div>
-
             <p
               className={`mb-6 sm:mb-8 leading-relaxed max-w-md
                 sm:max-w-lg text-center lg:text-left
